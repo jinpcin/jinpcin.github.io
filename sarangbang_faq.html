@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <meta name="_csrf_parameter" content="<?= csrf_token() ?>" />
+  <meta name="_csrf" content="<?= csrf_hash() ?>" />
+
+  <title><?= service('menuService')->title() ? service('menuService')->title() . ' | ' : '' ?>아이돌소설</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="/assets/layout/3.0.4/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/dev/AdminLTE/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="/assets/layout/3.0.4/plugins/jquery/jquery.min.js"></script>
+</head>
+
+<body class="hold-transition">
+  <div class="wrapper">
+    <section class="content">
+
+    <div class="card card-secondary">
+  <div class="card-header">
+    <h3 class="card-title">
+      도움말    </h3>
+    <div class="card-tools">
+      <form action="http://test.vivina-iot.com/board?board_id=faq&m=67" id="retrieveForm" name="retrieveForm" method="post" accept-charset="utf-8">
+      <!-- <input type="hidden" name="board_id" value="faq" /> -->
+      <input type="hidden" name="page" value="" />
+      <input type="hidden" name="sort_by" value="" />
+
+      <div class="input-group input-group-sm">
+                <select name="type" class="form-control&#x20;mr-1">
+<option value="subject">제목</option>
+<option value="content">내용</option>
+<option value="name">이름</option>
+<option value="userid">아이디</option>
+</select>
+
+        <input type="text" name="keyword" value="" class="form-control float-right" placeholder="Search">
+        <div class="input-group-append">
+          <button type="submit" data-form="search" class="btn btn-default"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <div id="accordion">
+                        <div class="card card-success">
+            <div class="card-header">
+              <h4 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse74" class="collapsed" aria-expanded="false">
+                <i class="fas fa-question-circle"></i> 포인트 적립은 어떻게 하나요?                </a>
+              </h4>
+            </div>
+            <div id="collapse74" class="panel-collapse collapse">
+              <div class="card-body">
+                <p><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">포인트는 재미있게 읽은 글의 작가님에게</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">포인트를 선물하실 수 있습니다.</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">작가님은 선물 받은 포인트를 작가활동비로 지원받으실 수 있습니다.</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">포인트 적립은 주로 어플내에서 이루어집니다.</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">1. 포인트 복권(무제한)</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">2. 포인트 무료충전소(무제한)</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">3. 출석포인트(5포인트)</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">4. 댓글달기 포인트(랜덤/1시간에 1회)</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">5. 커뮤니티에 글쓰기 포인트(조회수당 1~10포인트)</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">6. 작가도전 평가하기(무제한)</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">이 외에도 다양한 방법으로 포인트 적립할 수 있는 기능을</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">계속 추가해 나가도록 하겠습니다.</span><br></p>              </div>
+            </div>
+          </div>
+                  <div class="card card-success">
+            <div class="card-header">
+              <h4 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse73" class="collapsed" aria-expanded="false">
+                <i class="fas fa-question-circle"></i> 계정을 탈퇴하려면 어떻게 해야 하나요?                </a>
+              </h4>
+            </div>
+            <div id="collapse73" class="panel-collapse collapse">
+              <div class="card-body">
+                <p><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">PC 버전 홈페이지에서 로그인 후 정보수정에 가면</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">탈퇴하기 메뉴가 있습니다.</span><br></p>              </div>
+            </div>
+          </div>
+                  <div class="card card-success">
+            <div class="card-header">
+              <h4 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse72" class="collapsed" aria-expanded="false">
+                <i class="fas fa-question-circle"></i> 알림이 잘 안와요?                </a>
+              </h4>
+            </div>
+            <div id="collapse72" class="panel-collapse collapse">
+              <div class="card-body">
+                <p><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">알림이 잘 안오실 경우는 자주 폰을 바꾸셔서 정상적인 폰의 데이터를</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">가져오지 못해 발생됩니다. PC홈페이지 - 정보수정 에 가시면 아래쪽에</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">셀프 알림 테스트 기능을 만들어 놓았으니, 직접 테스트 하시고, 안되시는 경우</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">거기에 나와있는 해결 방법을 따라 주시길 바랍니다.</span><br></p>              </div>
+            </div>
+          </div>
+                  <div class="card card-success">
+            <div class="card-header">
+              <h4 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse71" class="collapsed" aria-expanded="false">
+                <i class="fas fa-question-circle"></i> 비밀번호 분실시 어떻게 찾을 수 있나요?                </a>
+              </h4>
+            </div>
+            <div id="collapse71" class="panel-collapse collapse">
+              <div class="card-body">
+                <p><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">어플에서 마이페이지 가시면 자신의 ID가 나옵니다.</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">이 화면을 캡쳐해서 캡쳐파일과 아이디,변경하실 비밀번호를 메일로 보내주시면</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">비밀번호를 변경해 드리도록 하겠습니다. 만약 로그아웃되어 있는 상태라면,</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">자주 사용하셨던 곳의 아이피주소를 보내주시면, 확인 후 변경처리해드리고있습니다.</span><br></p>              </div>
+            </div>
+          </div>
+                  <div class="card card-success">
+            <div class="card-header">
+              <h4 class="card-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse70" class="collapsed" aria-expanded="false">
+                <i class="fas fa-question-circle"></i> 작가활동을 그만 두려면 어떻게 해야 하나요?                </a>
+              </h4>
+            </div>
+            <div id="collapse70" class="panel-collapse collapse">
+              <div class="card-body">
+                <p><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">아이디와 비밀번호를 메일로 보내주시면 확인 후 작가정지 및</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">올린 모든 글을 삭제해 드립니다.</span><font color="red" style="font-family: 돋움, Dotum; font-size: 12px;">(복구 불가능)</font><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">작가 탈퇴시 한달간 작가도전에 재도전하는걸 금지하고 있으니</span><br style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;"><span style="color: rgb(51, 51, 51); font-family: 돋움, Dotum; font-size: 12px;">이점도 주의 부탁 드립니다.</span><br></p>              </div>
+            </div>
+          </div>
+                  </div>
+  </div>
+</div>
+
+    </section>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="/assets/layout/3.0.4/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE -->
+  <script src="/assets/layout/3.0.4/js/adminlte.js"></script>
+
+  <script src="/assets/plugins/bootbox/bootbox.min.js"></script>
+  <script src="/assets/js/apps.js"></script>
+
+</body>
+
+</html>
